@@ -29,9 +29,11 @@ function NameList() {
             skill: 'Kurbenetes'
           }
     ]
-
-    const personList = persons.map(person => <Person  key={person.name} person={person}/>)
-    return <div>{personList}</div> 
+    const names = ['Oswald','James','Harron','James']
+    const nameList = names.map((name,index)=><h2 key = {index}>{index} {name}</h2>)
+    // const personList = persons.map(person => <Person  key={person.name} person={person}/>)
+    // return <div>{personList}</div> 
+    return <div>{nameList}</div>
 }
 
 
